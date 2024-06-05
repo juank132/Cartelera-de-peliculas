@@ -1,0 +1,401 @@
+header{
+    height: 4em;
+    display: flex;
+    justify-content: start;
+    background-color: rgb(86, 96, 160);
+
+}
+
+
+.Tpagina {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+}
+
+
+.Tpagina h1{
+    display: inline;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin: .4em 0 0 .4em;
+    font-size: 2em ;
+    font-family:Impact;
+    font-style: oblique;
+    transition: .3s;
+    line-height: normal;
+    z-index: 5;
+    margin-left: 2.7em;
+
+}
+
+
+.Tpagina h1:hover{
+    color:  rgb(40, 40, 45);
+    cursor:default;
+}
+
+.logoimg{
+    display: flex;
+    position: relative;
+    height: 4em;
+    background-size: cover;
+}
+
+.logoimg img{
+    position: absolute;
+    margin-top: .3em;
+    width: 10em;
+    height: 3.5em;
+    left: -1.7em
+}
+
+
+nav {
+    position: relative;
+    width: 70%;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: start;
+    margin: 1.5em 0 0 0;
+    padding: 0;
+    line-height: normal;
+}
+
+
+nav ul li {
+    font-style: none;
+    margin-right: 2em;
+    font-size: 1.2em;
+}
+
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .3s;
+    font-family: sans-serif;
+}
+
+
+nav ul li a:hover {
+    color:  rgb(40, 40, 45);
+    transform: scale(1.07);
+    
+}
+
+
+body {
+    background: rgb(2, 2, 30);
+    color: white;
+    font-size: 1em;
+}
+
+
+.contenedor_peliculas {
+    display: flex;
+    height: 400px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    justify-content: space-evenly;
+}
+
+.contenedor_peliculas1 {
+    display: flex;
+    height: 400px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    justify-content:left;
+}
+
+
+
+.tarjeta_pelicula1{
+    position: relative;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    height: 400px;
+    width: 300px;
+    transition: .2s;
+    box-shadow: 0px 0px 10px 2px black;
+    scale: .75;
+    
+}
+
+
+.tarjeta_pelicula1:hover{
+    box-shadow: 0px 0px 20px 2px black;
+    border-radius: 6%;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.tarjeta_pelicula{
+    position: relative;
+    overflow: hidden;
+    background-color: aliceblue;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    height: 410px;
+    width: 300px;
+    transition: .2s;
+    box-shadow: 0px 0px 10px 2px black;
+    
+}
+
+
+.tarjeta_pelicula:hover{
+    box-shadow: 0px 0px 20px 2px black;
+    border-radius: 6%;
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+
+
+.infoT {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    padding-top: 0 ;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background: linear-gradient(to bottom, #02020246, #020202d3, #020202e9);
+}
+
+
+.tarjeta_pelicula:hover .infoT{
+    opacity: 1;
+}
+
+
+.tarjeta_pelicula1:hover .infoT{
+    opacity: 1;
+}
+
+
+.infoT .title{
+    margin-left: -.5em;
+    font-size: 1.7em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+
+.infoT .director{
+    font-size: 1em;
+    margin-bottom:.5em;
+    cursor: pointer;
+}
+
+
+.infoT .rate{
+    margin-bottom:.5em;
+    padding: .5em;
+    background-color: rgb(87, 190, 87);
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+
+.infoT .year{
+    font-size: 1em;
+    margin-bottom:.5em;
+    cursor: pointer;
+}
+
+
+.infoT .genre{
+    font-size: 1em;
+    margin-bottom:.5em;
+    cursor: pointer;
+}
+
+
+.infoT .duration{
+    margin-bottom:-1em;
+    font-size: 15px;
+    cursor: pointer;
+    right: 4em;
+}
+
+
+#seccion {
+    margin-top: 4em;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+}
+
+
+#cuerpo {
+    background-image: url(../assets/fanart-1-1024x576.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+
+#sing {
+    position: absolute;
+    right: 3.5em;
+    top: .8em;
+    border: none;
+    overflow: hidden;
+    
+   
+}
+
+#caja {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+
+}
+
+#agregarp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+
+}
+
+#agregarp input {
+    width: 30em;
+    margin: 1em;
+    display: block;
+    transition: .3s;
+}
+
+input:hover{
+    transform: scale(1.1);
+}
+
+#cajabo {
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#agregarp button {
+    display: inline;
+    position: absolute;
+    margin-top: 1em;
+    border-radius: 10%;
+    background-color:  rgb(25, 24, 24);
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+#unic {
+    left: 25em;
+    padding-right: 1.5em;
+    padding-left:1.5em;
+}
+
+#unic1 {
+    left: 18em;
+    padding-right: 1em;
+    padding-left:1em;
+}
+
+
+
+#agregarp textarea{
+    resize: none;
+    height: 1.8em;
+    width: 11.85em;
+    margin-left: 1em;
+    overflow: hidden;
+    width: 30em;
+    transition: .3s;
+}
+
+textarea:hover{
+    transform: scale(1.1);
+}
+
+button h4{
+    color: white;
+    position: relative;
+    font-size: 1em;
+    padding: 0;
+    margin-top: .5em;
+    left: 2em;
+
+}
+
+legend {
+
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+    padding: .5em;
+    transition: .3s;
+}
+
+legend h1 {
+    padding: .4em;
+    background-color: rgb(86, 96, 160);
+    border-radius: 2%;
+}
+
+
+legend:hover {
+    transform: scale(1.1);
+}
+
+.titulocreada{
+    display: inline-block;
+    position: absolute;
+    padding: 1em 1em 1em 1.3em;
+    background-color:rgb(86, 96, 160);
+    z-index: 1000;
+    transition: .2s;
+    border: 2px solid black;
+}
+
+.titulocreada:hover{
+    color: rgb(40, 40, 45);
+    transform: scale(1.07)
+}
+
+.contchec{
+    display: block;
+    position: relative;
+    width: 480px;
+    background-color: white;
+    left: 1em;
+}
+
+.genrela{
+    color: black;
+    display: block;
+    position: relative;
+    left: 1.5em;
+    bottom: 1em;
+}
+
+.genrech{
+    display: inline-block;
+    position: relative;
+    top: 1em;
+    right: 6em;
+}
